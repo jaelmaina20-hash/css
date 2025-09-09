@@ -1,0 +1,124 @@
+/* universal selector*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(255, 250, 240);
+}
+ /*element selector*/
+h1 {
+    color: gold;
+}
+p {
+    color: rgb(255, 0, 119);
+}
+div {
+    border: 3px inset rgb(161, 14, 14);
+    width: 500px;
+    text-align: center;
+}
+/* class selector*/
+.style-div {
+     border: 2px inset goldenrod;
+     width: 500px;
+     text-align: center;
+}
+.heading{
+    text-decoration: underline;
+}
+/*id selectors*/
+#tutorial {
+    color: red;
+    font-size: 17px;
+}
+#Lessons{
+    color: grey;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* attribute selectors*/
+a[href="https://zinduaschool.com"] {
+    background-color: brown ;
+    color: blue;
+}
+a[target="_self"]{
+    background-color: rebeccapurple;
+    color: white;
+}
+a[target="blank"]{
+    background-color: orchid;
+        color: white; 
+    }
+    /*group selectors*/
+    h1, h2 {
+        background-color: yellowgreen;
+    }
+    /* pseudo selectors*/
+    a:hover{
+        cursor: pointer;
+        background-color: black;
+    }
+    button {
+        color: #fff;
+        background-color: violet;
+    }
+    button:active {
+        background-color: green;
+        cursor:pointer;
+        color: black;
+    }
+    input { 
+        border: palevioletred solid 3px;
+        border-radius: 5px;
+    }
+    input:focus {
+         border-color: peru;
+         cursor: pointer;
+    }   
+    p::before {
+        content: "Note:";
+        font-weight: bold;
+        color: chartreuse;
+    }
+    p::after {
+        content: "[Read more]";
+        font-style: italic;
+        color: crimson;
+    }
+
+    /*descendant selector*/
+    div p {
+        color: green;
+    }
+/*Child selectors*/
+div > p {
+    color: cadetblue;
+}
+/*adjacent siblings selector*/
+h1 + p {
+    margin-top: 20px;
+    color: darkolivegreen;
+}
+/*general sibling selectors*/
+h1 ~ p {color:hotpink;
+}
+/*nested selectors*/
+nav {
+    & ul {
+        list-style: none;
+        & li { 
+            display: inline-block;
+            & a {
+                text-decoration: none;
+                color: blueviolet;
+                &:hover {
+                    cursor: pointer;
+                    color: red;
+                }
+
+
+                
+            }
+        }
+    }
+}
