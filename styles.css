@@ -19,6 +19,7 @@ div {
 }
 /* class selector*/
 .style-div {
+    
      border: 2px inset goldenrod;
      width: 500px;
      text-align: center;
