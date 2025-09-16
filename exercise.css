@@ -1,0 +1,45 @@
+body {
+      background-color: beige;
+      min-height: 100vh;          
+    }
+
+.card {
+    padding: 10px;
+    background-color: pink;
+    color: black;
+    text-align: center;
+    width: 500px;
+    margin: 200px;
+    border: 1px solid green;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px purple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.logo {
+    border-radius: 50%;
+    border: 3px solid black;
+}
+.socials a {
+    margin: 8px;
+    color: black;
+    font-size: 18px;
+}
+.socials a:hover {
+    color: palevioletred;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav{
+    & ul {
+        list-style: none;
+        & li{
+            display: inline-block;
+        }
+    }
+}

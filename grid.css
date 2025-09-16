@@ -1,0 +1,44 @@
+p {
+padding: 1em 2em;
+margin: 5px 10px;
+border: 1px solid plum;
+width: 200px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px;
+    gap: 10px;
+    row-gap: 10px;
+    column-gap: 20px;
+    grid-template-areas: 
+        "header header"
+        "sidebar sidebar"
+        "content content"
+        "footer footer";
+}
+.item1 {
+    padding: 10px;
+    background-color: brown;
+    border: 1px solid red;
+    grid-area: header;
+}
+.item2 {
+    padding: 10px;
+    background-color: brown;
+    border: 1px solid red;
+    grid-area: sidebar;
+}
+.item3 {
+    padding: 10px;
+    background-color: brown;
+    border: 1px solid red;
+    grid-area: content;
+}
+.item4 {
+    padding: 10px;
+    background-color: brown;
+    border: 1px solid red;
+    grid-area: footer;
+}

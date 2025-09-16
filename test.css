@@ -1,0 +1,57 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative; /* required for dropdown positioning */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 12px;
+  display: block;
+}
+
+/* Hide the dropdown initially */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;   /* right below the parent link */
+  left: 0;
+  background: #fff;
+  min-width: 180px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+}
+
+/* Style the dropdown links */
+.dropdown-menu li a {
+  padding: 10px 15px;
+  color: #333;
+}
+
+.dropdown-menu li a:hover {
+  background: #f2f2f2;
+}
+
+/* Show menu when hovering over parent */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+

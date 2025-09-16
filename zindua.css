@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+body {
+    display: flex;
+    line-height: 1.5;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0px;
+    padding-top: 90px;
+}
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    padding: 20px 10px 0px 10px;
+    color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: white;
+    
+}
+.navlinks {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navlinks a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+.navlinks a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: aliceblue;
+    transition: width 0.3s ease-out left 0.3s ease-out;
+    }
+.navlinks a:hover::after {
+    width: 100%;
+    left: 0;
+}
+.navlinks li {
+    margin: 0 15px;
+    position: relative;
+}
+.logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 20;
+    line-height: 2.5;
+    background-color: azure;
+}
+.dropdown-menu li a {
+    padding: 10px a;
+    color: black;
+}
+.dropdown-menu li a:hover {
+    background: red;
+    }
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.apply {
+    padding: 10px 10px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border:2px solid red;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    margin-bottom: 5px;
+}
+.apply:hover {
+    background-color: black;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+    color: red;
+}
+.section1 {
+    margin: 30px;
+    padding: 40px;
+    border: 1px solid grey;
+    background: rgb(206, 201, 201);
+    border-radius: 20px;
+    }
+.para {
+    font-size: 37px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+.para1{
+    text-align: center;
+}
+span {
+    color: red;
+}
+.buttons {
+  display: flex;
+  justify-content: center; 
+  gap: 15px;               
+  margin-top: 20px; 
+    
+}
+.apply1, .explore {
+text-decoration: none;
+border: 2px solid red;
+border-radius: 5px;
+padding: 8px 50px;
+width: 500px;
+text-align: center;
+}
+.apply1 {
+    background-color: red;
+    color: white;
+
+}
+.explore {
+    background-color: white;
+    color: red;
+}
+.apply1:hover {
+    background: rgb(84, 154, 154);
+}
+.explore:hover {
+    background: rgb(84, 154, 154);
+}
+.section2 {
+    margin: 30px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: black;
+    }
+.para2 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 40px;
+padding: 10px 10px;
+}
+
+.img-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100px;
+height: 60px;
+
+}
+.img-container img{
+max-width: 100%;
+max-height: 100%;
+height: auto;
+object-fit: contain;
+}
+footer {
+   background:black;
+   color: white;
+   padding: 20px;
+    margin: 20px;
+}
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+   margin-right: 40px;
+}
+.para3 {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+.contact1 a {
+    color: white;
+    text-decoration: none;
+}
+.contact1 a:hover {
+    color: red;
+    text-decoration: underline;
+}
+form {
+display: flex;
+text-align: center;
+margin: 10px auto;
+}
+.para4 {
+    font-weight: bold;
+    font-size: 25px;
+}
+input {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    width: 240%;
+}
+button {
+    width: 200%;
+    padding: 10px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;}
+
+.link-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    }
+.footer-links {
+line-height: 2.0;
+}
+.footer-bottom {
+    margin-top: 10px;
+    text-align: center;
+}

@@ -1,0 +1,50 @@
+
+body {
+    background-color: brown;
+}
+@media only screen and (max-width:600px) {
+    body {
+        background-color: burlywood;
+    }
+ }
+/* @media only screen and (max-width:768px) {
+    body {
+        background-color: blueviolet;
+    }
+} */
+@media only screen and (min-width:768px) {
+    body {background-color: chartreuse;
+    }
+}
+@media only screen and (min-width: 992px) {
+    body{
+        background-color: darkblue;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    body{
+        background-color: purple;
+    }
+}
+.col {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    color: black;
+}
+.colcontainer:after {
+    content: "";
+    display: table;
+    clear: both;
+
+    }
+@media only screen and (max-width: 900px) {
+    .col {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .col {
+        width: 100px;
+    }
+} 
